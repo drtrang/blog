@@ -1,0 +1,177 @@
+# Hexo 配置
+## 文档地址: https://hexo.io/docs/configuration.html
+## 源码地址: https://github.com/hexojs/hexo/
+
+# 网站设置
+# Note：description 主要用于 SEO，告诉搜索引擎一个关于您站点的简单描述，通常建议在其中包含您网站的关键词
+#       author 参数用于主题显示文章的作者
+## 网站标题
+title: Trang's Blog
+## 网站副标题
+subtitle: 闷不骚写代码
+## 网站描述
+description: 快手后端研发，喜欢造轮子，重度工具控
+## 站长名字
+author: Trang
+## 站长邮箱
+email: donghao.l@hotmail.com
+## 网站使用的语言
+language: zh-CN
+## 网站使用的时区
+timezone: Asia/Shanghai
+## SEO 优化
+keywords: 后端,架构,Java,Spring,SpringBoot
+
+# 网址
+## 网址
+## Note：如果您的网站存放在子目录中，例如 http://yoursite.com/blog，则请将您的 url 设为 http://yoursite.com/blog 并把 root 设为 /blog/
+url: http://blog.trang.space
+## 网站根目录
+root: /
+## 文章的永久链接格式 https://hexo.io/zh-cn/docs/permalinks.html
+permalink: :year/:month/:day/:title/
+## 永久链接中各部分的默认值
+permalink_defaults:
+
+# 目录
+## 资源文件夹，这个文件夹用来存放内容
+source_dir: source
+## 公共文件夹，这个文件夹用于存放生成的站点文件
+public_dir: public
+## 标签文件夹
+tag_dir: tags
+## 归档文件夹
+archive_dir: archives
+## 分类文件夹
+category_dir: categories
+## Include Code 文件夹
+code_dir: downloads/code
+## 国际化（i18n）文件夹
+i18n_dir: :lang
+## 跳过指定文件的渲染，您可使用 glob 表达式来匹配路径
+skip_render:
+
+# 文章
+## 新文章的文件名称
+new_post_name: :title.md
+## 预设布局
+default_layout: post
+## 在中文和英文之间加入空格
+auto_spacing: true
+## 把标题转换为 title case
+titlecase: false
+## 在新标签中打开链接
+external_link: true
+## 把文件名称转换为 1-小写 2-大写
+filename_case: 0
+## 显示草稿
+render_drafts: false
+## 开启资源文件夹 https://hexo.io/zh-cn/docs/asset-folders.html
+post_asset_folder: true
+## 把链接改为与根目录的相对地址
+relative_link: false
+## 显示未来的文章
+future: false
+## 代码块的设置
+highlight:
+  enable: true
+  line_number: true
+  auto_detect: false
+  tab_replace: '    '
+
+# 分页
+# plugins:
+#  - hexo-generator-index
+#  - hexo-generator-archive
+#  - hexo-generator-tag
+
+## 0: 完全关闭
+## 2: 开启分页
+## 1: 关闭分页
+archive: 1
+category: 1
+tag: 1
+
+## 主页分页
+index_generator:
+  ## 主页路径
+  path: ''
+  ## 每页的文章数量，0 为关闭分页
+  per_page: 5
+  ## 文章排序
+  order_by: -date
+## 归档分页
+archive_generator:
+  per_page: 10
+  yearly: true
+  monthly: true
+## 分类分页
+category_generator:
+  per_page: 10
+## 标签分页
+tag_generator:
+  per_page: 10
+
+# 分类 & 标签
+## 默认分类
+default_category: uncategorized
+## 分类别名
+category_map:
+## 标签别名
+tag_map:
+
+# 日期/时间格式
+## Hexo 使用 Moment.js 来解析和显示时间 http://momentjs.com/docs/#/displaying/format/
+## 日期格式
+date_format: YYYY-MM-DD
+## 时间格式
+time_format: HH:mm:ss
+
+# 扩展
+## 插件地址: https://github.com/hexojs/hexo/wiki/Plugins
+## 主题地址: https://github.com/hexojs/hexo/wiki/Themes
+## plugins:
+##  - hexo-generator-feed
+##  - hexo-generator-baidu-sitemap
+##  - hexo-generator-sitemap
+## 当前主题名称，值为 false 时禁用主题
+theme: next
+
+## 部署 https://hexo.io/docs/deployment.html
+deploy:
+  ## plugins: hexo-deployer-git https://github.com/hexojs/hexo-deployer-git
+  type: git
+  ## Repository 地址
+  repository: git@github.com:drtrang/drtrang.github.io.git
+  ## 分支名称
+  branch: master
+
+# 实例
+## 端口号
+port: 4000
+## 服务器 IP
+server_ip: localhost
+## http://www.senchalabs.org/connect/logger.html
+logger: true
+logger_format: dev
+
+## 本地搜索
+## plugins: hexo-generator-searchdb
+search:
+  path: search.xml
+  field: post
+  format: html
+  limit: 10000
+
+sitemap:
+  path: sitemap.xml
+
+baidusitemap:
+  path: baidusitemap.xml
+
+## https://github.com/theme-next/hexo-symbols-count-time
+symbols_count_time:
+  symbols: false
+  time: false
+  total_symbols: false
+  total_time: false

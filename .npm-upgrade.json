@@ -1,0 +1,8 @@
+{
+  "ignore": {
+    "hexo-renderer-ejs": {
+      "versions": "0.3.1",
+      "reason": ""
+    }
+  }
+}
