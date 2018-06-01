@@ -10,7 +10,7 @@ title: Trang's Blog
 ## 网站副标题
 subtitle: 闷不骚写代码
 ## 网站描述
-description: 快手后端研发，喜欢造轮子，重度工具控
+description: 后端研发，喜欢造轮子，重度工具控
 ## 站长名字
 author: Trang
 ## 站长邮箱
@@ -20,7 +20,7 @@ language: zh-CN
 ## 网站使用的时区
 timezone: Asia/Shanghai
 ## SEO 优化
-keywords: 后端,架构,Java,Spring,SpringBoot
+keywords: 后端,架构,基础架构,中间件,微服务,Java,SpringBoot
 
 # 网址
 ## 网址
