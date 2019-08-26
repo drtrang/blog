@@ -5,4 +5,4 @@ type: "about"
 comments: false
 ---
 
-<center>Write the code. Change the world.</center>
+<center><h1>Write the code. Change the world.</h1></center>
