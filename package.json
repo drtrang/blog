@@ -29,6 +29,6 @@
     "hexo-server": "^0.3.3",
     "next-util": "github:theme-next/next-util",
     "npm": "^6.13.4",
-    "valine": "^1.3.9"
+    "valine": "^1.5.0"
   }
 }
